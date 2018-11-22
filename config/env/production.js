@@ -101,7 +101,7 @@ module.exports = {
     * choose to keep this enabled.)                                            *
     *                                                                          *
     ***************************************************************************/
-    // cascadeOnDestroy: false,
+    cascadeOnDestroy: false,
 
   },
 
@@ -147,12 +147,15 @@ module.exports = {
     * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
     *                                                                          *
     ***************************************************************************/
+/*    
     cors: {
-      // allowOrigins: [
-        // 'https://example.com',
-      // ]
+       allowOrigins: [
+         'https://api-estrella-roja.appspot.com',
+	 'http://api-estrella-roja.appspot.com',
+	 '*',
+     ]
     },
-
+*/
   },
 
 
@@ -251,8 +254,8 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
      onlyAllowOrigins: [
-       'https://apiestrella1.appspot.com',
-       'http://apiestrella1.appspot.com',
+       'https://api-estrella-roja.appspot.com',
+       'http://api-estrella-roja.appspot.com',
      ],
 
 

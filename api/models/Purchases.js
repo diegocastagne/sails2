@@ -14,7 +14,7 @@ module.exports = {
         total: {type: 'number', columnName: 'total', required: true },
         company_id: {type: 'number', columnName: 'company_id', required: true },
         user_id: {type: 'number', columnName: 'user_id', required: true },
-
+	created_at: {type: 'ref', columnType: 'date', columnName: 'created_at', autoCreatedAt: true},
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
