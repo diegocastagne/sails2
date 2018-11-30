@@ -13,7 +13,7 @@ tableName: 'adminusers',
         name: {type: 'string', columnName: 'name', required: true },
         last_name: {type: 'string', columnName: 'last_name', required: true },
         email: {type: 'string', unique: true, columnName: 'email', required: true },
-        password: {type: 'string', columnName: 'password', required: true },
+        password: {type: 'string', columnName: 'password', required: true, encrypt: true },
 
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗

@@ -10,7 +10,7 @@ module.exports = {
     login: async function(req, res) {
         var usuario = await Users.findOne({
            where: { email: req.body.email }
-        });
+        }).decrypt();
         if (usuario) {
 	    sails.log.info(usuario.password);
             if (usuario.password == req.body.password) {

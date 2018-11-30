@@ -13,7 +13,7 @@ tableName: 'users',
         last_name: {type: 'string', columnName: 'last_name', required: true },
         email: {type: 'string', unique: true, columnName: 'email', required: true },
         birthdate: {type: 'ref', columnType: 'date', columnName: 'brithdate', },
-        password: {type: 'string', columnName: 'password', required: true },
+        password: {type: 'string', columnName: 'password', required: true, encrypt: true },
         postal_code: {type: 'number', columnName: 'postal_code', required: true },
         phone_number: {type: 'string', columnName: 'phone_number', required: true },
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
